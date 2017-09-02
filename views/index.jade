@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .container
+    if (!user)
+      a(href="/login") Login
+      br
+      a(href="/register") Register
+      div(ng-view)
+    if (user)
+      p You are currently logged in as #{user.username}
+      a(href="/logout") Logout
+      div(ng-view)
+
+

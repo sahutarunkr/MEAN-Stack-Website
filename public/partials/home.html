@@ -1,0 +1,13 @@
+<h1>Videos</h1>
+<ul>
+    <li ng-repeat='video in videosArray'><a href="/#/video/{{video._id}}"><img src="images/{{video.picture}}.jpg" alt="{{video.picture}}_image" height="600" width="400"><br/>
+         {{video.title}}
+         
+</a> <a href="/#/video/delete/{{video._id}}"> <i class="glyphicon glyphicon-remove"></i>
+</a>
+<br/><br/>
+</li>
+</ul>
+<p>
+    <a href="/#/add-video">Add a Video</a>
+</p>
